@@ -6,6 +6,12 @@
 # GPIO 23 Trigger for Shutdown
 # GPIO 24 LED for acknowledge of trigger (please note that the led will
 #         go out again before raspberry shutdown is completed.
+#
+# Add to startup:
+# sudo nano /etc/rc.local
+# >>
+# sudo python /home/pi/Scripts/shutdown_pi.py &
+# <<
   
 import RPi.GPIO as GPIO  
 import time  
