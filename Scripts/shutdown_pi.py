@@ -1,6 +1,11 @@
 #!/bin/python  
 # Simple script for shutting down the raspberry Pi at the press of a button.  
-# by Inderpreet Singh  
+# by Inderpreet Singh
+# enhanced by droid41
+#
+# GPIO 23 Trigger for Shutdown
+# GPIO 24 LED for acknowledge of trigger (please note that the led will
+#         go out again before raspberry shutdown is completed.
   
 import RPi.GPIO as GPIO  
 import time  
